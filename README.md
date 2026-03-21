@@ -21,10 +21,10 @@ Go 기반 백엔드, Kubernetes / OpenStack 환경, Monitoring / Metering, 자�
 ## 대표 저장소
 - [network-collector](https://github.com/swlee3306/network-collector): OpenStack 자원과 네트워크 토폴로지를 수집하고 조회하는 시스템
 - [make-snmprec](https://github.com/swlee3306/make-snmprec): SNMP 데이터를 `.snmprec` 파일로 변환하는 도구
-- [system-Info-collector](https://github.com/swlee3306/system-Info-collector): 시스템 메트릭을 수집해 API 형태로 제공하는 에이전트
+- [system-metrics-agent](https://github.com/swlee3306/system-metrics-agent): 시스템 메트릭을 수집해 API 형태로 제공하는 에이전트
 - [vm-ssh-collector](https://github.com/swlee3306/vm-ssh-collector): SSH로 여러 VM의 시스템 데이터를 수집하는 도구
 - [system-broadcast-agent](https://github.com/swlee3306/system-broadcast-agent): 같은 네트워크 안의 Agent를 자동 탐지하는 도구
-- [go_crud](https://github.com/swlee3306/go_crud): API와 DB 구조를 연습한 Go 백엔드 저장소
+- [go-api-crud](https://github.com/swlee3306/go-api-crud): API와 DB 구조를 연습한 Go 백엔드 저장소
 
 ## 기술 키워드
 `Go` `Kubernetes` `OpenStack` `Monitoring` `Metering` `API` `DB` `SNMP` `IPMI` `Network`
