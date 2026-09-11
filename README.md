@@ -1,38 +1,32 @@
-# 이상욱 | swlee3306
+# 이상욱 · Cloud Platform & Go Backend
 
-인프라를 이해하는 백엔드 엔지니어입니다.  
-기능보다 구조를 먼저 보고, 데이터가 어떻게 수집되고 저장되고 운영되는지 전체 흐름을 설계하는 데 관심이 많습니다.
+인프라에서 수집한 데이터를 믿을 수 있는 API와 운영 도구로 만드는 개발자입니다.
+Go, OpenStack, Kubernetes를 중심으로 자원 수집·관측성·배포와 개발 자동화를 다룹니다.
+반복 작업을 줄이는 것뿐 아니라, 실패했을 때 원인을 찾고 같은 조건으로 다시 검증할 수 있는 구조를 중요하게 생각합니다.
 
-Go 기반 백엔드, Kubernetes / OpenStack 환경, Monitoring / Metering, 자동화를 중심으로 작업해 왔습니다.
+I build infrastructure backends and automation tools with explicit state, observable failures, and reproducible checks.
 
-## 핵심 정리
-- Go 기반 백엔드와 수집기 개발
-- Kubernetes / OpenStack 기반 클라우드 인프라 이해
-- Monitoring / Metering 데이터 흐름 설계
-- SNMP / IPMI / API 기반 인프라 데이터 수집
-- 자동화와 운영 표준화
+## Selected work
 
-## 내가 중요하게 보는 것
-- 기능보다 구조
-- 반복 작업 제거
-- 성능과 처리 효율
-- 데이터 정확성과 검증 가능성
+| 프로젝트 | 살펴볼 문제와 설계 | 상태 |
+| --- | --- | --- |
+| [infra-orch-studio](https://github.com/swlee3306/infra-orch-studio) | OpenStack plan·승인·apply 흐름, API/runner 분리, 상태·감사 기록 | 플랫폼 프로젝트 |
+| [network-collector](https://github.com/swlee3306/network-collector) | OpenStack 수집, Go API, 네트워크 토폴로지와 React UI | 관측성 프로젝트 |
+| [gitlab-mr-review-automation](https://github.com/swlee3306/gitlab-mr-review-automation) | GitLab 읽기 전용 연동, 중복 방지, 오래된 커밋 차단, 재시도·작업 소유권 | 범용 reference implementation |
+| [gitops-deployment-guardrails](https://github.com/swlee3306/gitops-deployment-guardrails) | Kubernetes 설정 검사와 변경 계획, 값 노출 없는 결과 | 범용 CLI |
+| [ai-company-os](https://github.com/swlee3306/ai-company-os) | 작업·승인·실행 증거를 연결하는 Go CLI/API와 웹 UI | 로컬 실험 프로젝트 |
+| [make-snmprec](https://github.com/swlee3306/make-snmprec) | SNMP 수집 결과를 시뮬레이션 입력으로 변환 | 네트워크 도구 |
 
-## 대표 저장소
-- [network-collector](https://github.com/swlee3306/network-collector): OpenStack 자원, 메트릭, 네트워크 토폴로지를 수집하고 시각화하는 시스템
-- [vm-ssh-collector](https://github.com/swlee3306/vm-ssh-collector): SSH로 VM 파일시스템 메트릭을 수집하고 주기적으로 전송하는 Go collector
-- [system-metrics-agent](https://github.com/swlee3306/system-metrics-agent): 시스템 메트릭을 수집하고 API로 제공하는 에이전트
-- [make-snmprec](https://github.com/swlee3306/make-snmprec): SNMP 데이터를 `.snmprec` 파일로 변환하는 도구
-- [system-broadcast-agent](https://github.com/swlee3306/system-broadcast-agent): 같은 네트워크 안의 Agent를 자동 탐지하는 도구
-- [go-api-crud](https://github.com/swlee3306/go-api-crud): JWT 인증, 사용자 CRUD, health check를 포함한 Go API 서버 예제
+## Where to start
 
-## 기술 키워드
-`Go` `Kubernetes` `OpenStack` `Monitoring` `Metering` `API` `DB` `SNMP` `IPMI` `Network`
+- **플랫폼 설계:** infra-orch-studio의 [탐색 안내](https://github.com/swlee3306/infra-orch-studio/blob/main/docs/PORTFOLIO.md)에서 상태 전이와 검증 경로를 확인할 수 있습니다.
+- **관측성 데이터 흐름:** network-collector의 [탐색 안내](https://github.com/swlee3306/network-collector/blob/001-openstack-monitoring/docs/PORTFOLIO.md)에서 collector → 저장소 → API → UI를 확인할 수 있습니다.
+- **계정 없이 실행:** 두 Python 자동화 도구는 합성 예제로 실행할 수 있습니다. 실제 외부 연동과 오프라인 검증 범위를 README에서 구분합니다.
 
-## 관심 분야
-- Platform Engineer
-- Cloud Engineer
-- Backend Engineer
-- Data Infra
+## Engineering focus
 
-클라우드 인프라를 데이터 기반으로 구조화하고 자동화하는 엔지니어를 지향합니다.
+`Go` · `OpenStack` · `Kubernetes` · `Infrastructure APIs` · `Observability` · `SNMP` · `Automation`
+
+공개 코드·테스트로 확인할 수 있는 내용을 중심으로 설명합니다. 예제의 검증 결과를 실제 운영 규모나 성능 보장으로 확대하지 않습니다.
+
+[프로젝트와 개발 기록](https://swlee3306.github.io/sulee_portfolio/) · [전체 저장소](https://github.com/swlee3306?tab=repositories)
